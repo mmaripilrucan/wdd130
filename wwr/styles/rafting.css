@@ -186,3 +186,169 @@ footer p {
   width: 30px;
   height: 30px;
 }
+
+/* Contact Page Specific Styles */
+.contact-container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--primary-color);
+  background: none;
+  position: static;
+  padding: 0;
+  opacity: 1;
+}
+
+/* Company Info Section - Contact Page Only */
+.contact-container .company-info h2,
+.contact-container .our-team h2,
+.contact-container .contact-form h2 {
+  margin: 1.5rem 0 1rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.contact-container .info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container .info-text p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.contact-container .map-container iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Team Gallery - Contact Page Only */
+.contact-container .team-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contact-container .team-gallery figure {
+  text-align: center;
+  margin: 0;
+}
+
+.contact-container .team-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-container .team-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+/* Contact Form - Contact Page Only */
+.contact-container .contact-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.contact-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-container .form-group input[type="text"],
+.contact-container .form-group input[type="email"],
+.contact-container .form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: var(--body-font);
+}
+
+.contact-container .form-group textarea {
+  resize: vertical;
+}
+
+.contact-container .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-container .radio-group label {
+  font-weight: normal;
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+.contact-container .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container .checkbox input {
+  margin-right: 0.5rem;
+}
+
+.contact-container .submit-btn {
+  background-color: var(--accent2-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.contact-container .submit-btn:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Footer link - Only on contact page */
+footer .wireframe-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments - Contact Page Only */
+@media (max-width: 768px) {
+  .contact-container .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container .team-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container .map-container iframe {
+    height: 250px;
+  }
+}
